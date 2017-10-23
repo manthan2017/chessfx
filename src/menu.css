@@ -1,0 +1,5 @@
+.root {
+    -fx-background-color: linear-gradient(#ffffff, #ffffff);
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
