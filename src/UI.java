@@ -45,13 +45,12 @@ public class UI extends Application {
 	private Piece current;
 	private boolean start = false;
 
-	public void run(String args[]) {
-		launch(args);
+	public void run() {
+		launch();
 	}
 
 	@Override
 	public void start(Stage primaryStage) throws FileNotFoundException, InterruptedException {
-
 		Rectangle2D primScreenBounds = Screen.getPrimary().getVisualBounds();
 		double width = primScreenBounds.getWidth();
 		double height = primScreenBounds.getHeight();
@@ -411,6 +410,7 @@ public class UI extends Application {
 			@Override
 			public void run() {
 				try {
+					logic.printBoard();
 					Refresh();
 					if (logic.Winner == 1) {
 						win.setText("White Wins");
