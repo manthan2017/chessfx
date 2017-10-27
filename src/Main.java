@@ -4,9 +4,9 @@
  */
 public class Main {
 	public static void main(String args[]) throws InterruptedException {
-		//UI ui = new UI();
-		//ui.run();
-		test(1000);
+		UI ui = new UI();
+		ui.run();
+		//test(1000);
 	}
 
 	public static void test(int n) throws InterruptedException {
